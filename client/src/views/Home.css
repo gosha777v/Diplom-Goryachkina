@@ -1,0 +1,151 @@
+.brand-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-logo .logo-icon.large {
+  width: 60px;
+  height: 60px;
+}
+
+.hero-logo .logo-plane {
+  font-size: 1.5rem;
+}
+
+.hero-logo .page-title {
+  font-size: 3rem;
+  margin-bottom: 0;
+  background: linear-gradient(135deg, #ffffff, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--accent-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.feature-card {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card .card-header {
+  flex-direction: column;
+  border: none;
+  padding-bottom: 0;
+}
+
+.feature-card .card-title {
+  font-size: 1.1rem;
+}
+
+/* ОБНОВЛЕННЫЕ СТИЛИ ДЛЯ КНОПОК */
+.user-welcome {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.user-info {
+  margin-bottom: 1.5rem;
+}
+
+.user-info p {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.auth-promo {
+  text-align: center;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.auth-promo .actions {
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2rem; /* Увеличил отступ между кнопками */
+}
+
+/* Адаптивность для кнопок */
+@media (max-width: 768px) {
+  .hero-logo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hero-logo .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-logo .logo-icon.large {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* На мобильных уменьшаем отступ между кнопками */
+  .auth-promo .actions {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-logo .page-title {
+    font-size: 2rem;
+  }
+  
+  .feature-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .auth-promo .actions {
+    gap: 0.75rem;
+  }
+
+  .auth-promo .actions .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
